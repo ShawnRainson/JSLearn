@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            "use strict";
+            let arr = ["a", "b"];
+            arr.push(function() {
+                alert( this );
+            });
+            arr[2](); // Выведет a, b, function() {alert{this}} потому что в качестве this выводит массив
+        </script>
+    </body>
+</html>

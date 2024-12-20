@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            "use strict";
+            let messages = [
+            {text: "Hello", from: "John"},
+            {text: "How goes?", from: "John"},
+            {text: "See you soon", from: "Alice"}
+            ];
+            let checkMessages = new WeakSet();
+            checkMessages.add(messages[0]);
+            checkMessages.add(messages[1]);
+            checkMessages.add(messages[0]);
+            alert("Read message 0:" + checkMessages.has(messages[0]));
+            messages.shift();
+        </script>
+    </body>
+</html>

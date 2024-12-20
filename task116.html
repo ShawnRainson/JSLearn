@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            "use strict";
+            function byField(field) {
+                return (a,b) => a[field] > b[field] ? 1 : -1; 
+            }   
+            let users = [
+            { name: "Иван", age: 20, surname: "Иванов" },
+            { name: "Пётр", age: 18, surname: "Петров" },
+            { name: "Анна", age: 19, surname: "Каренина" }
+            ];
+            alert(users.sort(byField('name')));
+            alert(users.sort(byField('age')))
+        </script>
+    </body>
+</html>

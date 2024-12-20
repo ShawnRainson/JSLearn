@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            "use strict";
+            function sumTo(a) {
+                if (a == 1) {
+                    return a;
+                } else {
+                    return a + sumTo(a - 1);
+                }
+            }
+            alert(sumTo(1));
+            alert(sumTo(2));
+            alert(sumTo(3));
+            alert(sumTo(4));
+            alert(sumTo(100));
+        </script>
+    </body>
+</html>
