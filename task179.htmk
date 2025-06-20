@@ -1,0 +1,13 @@
+<table id="table">
+  aaa
+  <tr>
+    <td>Тест</td>
+  </tr>
+</table>
+
+<script>
+  alert(table); // таблица, как и должно быть
+
+  table.remove();
+  // потому что "ааа", не является узлом, а remove предназначено для удаления узлов
+</script>
